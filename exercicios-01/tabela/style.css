@@ -1,0 +1,27 @@
+
+table{
+    border: solid 1px;
+    width: 800px;
+    height: 300px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(90, 90, 90);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px rgb(129, 129, 129);
+}
+
+
+td{
+    border: solid 1px;
+}
+
+th{
+    height: 50px;
+    border: solid 1px;
+}
+
+div{
+    width: 800px;
+    height: 300px;
+}

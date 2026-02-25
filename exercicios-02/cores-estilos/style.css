@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-style: italic;
+    background-color: rgb(0, 162, 255);
+}
+
+div{
+    max-width: 1200px;
+    min-width: 420px;
+    margin: auto;   
+}
+
+header,h1{
+    
+    border: solid 1px;
+    background-color: green;
+    color: yellow;
+    font-size: larger;
+}
+
+.content{
+    border: solid 2px black;
+    margin-top: 40px;
+}

@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px;
+  height: 600px;
+  width: 400px;
+}
+
+form input{
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div.container{
+    margin-top: 100px;
+}
+
+table{
+    width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table tr td{
+    border: 2px solid black;
+    height: 50px;
+    text-align: center;
+}
+

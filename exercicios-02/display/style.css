@@ -1,0 +1,17 @@
+.container{
+    width: 400px;
+    background-color: rgb(255, 251, 0);
+    display: flex;
+    margin: auto;
+}
+
+
+div{
+    display: inline-block;
+}
+
+p{
+    margin: 20px 20px;
+    border: solid 1px;
+    padding: 5px 5px;
+}
