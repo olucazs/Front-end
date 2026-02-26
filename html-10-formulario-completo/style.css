@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient( #4facfe, #00f2fe);
+    background-attachment: fixed;
+}
+
+
+form{
+    width: 96%;
+    max-width: 480px;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(116, 116, 116);
+}
+
+form fieldset{
+    border: transparent;
+    padding: 0px 40px;
+    border-radius: 15px;
+}
+
+form legend{
+    text-align: center;
+    font-size: 27px;
+}
+
+div.label{
+    margin-top: 30px;
+}
+
+form input[type=text]{
+    display: inline-block;
+    width: 80%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+form input[type=password]{
+    display: inline-block;
+    width: 80%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+form input[type=password]:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+form input[type=text]:focus{
+    background-color: rgb(211, 211, 211);
+}
+
+select{
+    display:block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #797979;;
+}
+
+select:focus{
+    background-color: gray;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.estado{
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+div.comida{
+    margin-top: 20px;
+}
+
+div.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+form input[type=submit]{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px ;
+    border: 1px solid #ccc;
+    background: linear-gradient(#4facfe, #00f2fe );
+}

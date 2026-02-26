@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <form>
+        <fieldset>
+            <legend>Formulário profissional</legend>
+            <div class="label"><label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome completo" autocomplete="off"></div>
+
+            <div class="label"><label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Digite seu Email" autocomplete="off"></div>
+
+            <div class="label"><label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha" maxlength required="8"></div>
+
+            <div><select class="idade">
+                <option value="title-idade">Qual a sua idade?</option>
+                <option value="answer">Menor de 18</option>
+                <option value="answer">Maior de 18</option>
+                <option value="answer">25 - 40</option>
+                <option value="answer">40+</option>
+            </select></div>
+
+            <h2>Qual estado mora?</h2>
+            <div class="estado">
+                <div class="rad"><input type="radio" name="estado"><span> Minas Gerais</span></div>
+                <div class="rad"><input type="radio" name="estado"><span> São Paulo</span></div>
+                <div class="rad"><input type="radio" name="estado"><span> Rio de Janeiro</span></div>
+            </div>
+
+            <h2>Selecione uma comida:</h2>
+            <div class="comida">
+                <div><input type="checkbox"><span> Strogonoff</span></div>
+                <div><input type="checkbox"><span> Feijoada</span></div>
+                <div><input type="checkbox"><span> Lasanha</span></div>
+            </div>
+
+            <div class="botao"><input type="submit" value="Enviar">
+</body>
+</html>
