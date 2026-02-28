@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+/*ALL-TABLE*/
+table{
+    border-collapse: collapse;
+    width: 800px;
+    position: absolute;
+    bottom:80%;
+    right: 30%;
+}
+
+/*TABLE-CONTENT*/
+td, th{
+    border: solid 1px black;
+    padding: 5px;
+    text-align: center;
+}
+
+/*CONTAINER*/
+div.container{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    left: 1200px;
+    top: 400px;
+}

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*BACKGROUND*/
+body{
+    background-color: white;
+
+}
+
+/*CONTEUDO WIDHT*/
+div.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*CABEÇÁRIO*/
+div.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*CABEÇÁRIO*/
+div.header img{
+    margin: 10px 40px;;
+}
+
+/*CABEÇÁRIO*/
+li{
+    display: inline-block;
+    margin: 30px 40px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*CONTEUDO*/
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+}
+
+/*TITULOS*/
+.texto h2{
+    font-size: 50px;
+    max-width: 550px;
+    line-height: 60px;
+}
+
+/*TITULOS*/
+.texto h2 span{
+    color: rgb(1, 109, 1);
+}
+
+/*PARAGRAFO*/
+.texto p{
+    max-width: 750px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/*INPUT*/
+input[type=submit]{
+    padding: 10px 30px;
+    background-color: rgb(1, 109, 1);
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px rgb(153, 153, 153);
+}
+
+/*LINKS*/
+a{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    max-width: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+article.lado{
+    margin-top: 100px;
+    position: relative;
+}
+
+/*EFEITO BG VERDE*/
+.extras{
+    position: absolute;
+    bottom: -200px;
+    right: -200px;
+    background-color: rgb(1, 109, 1);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+img.copo{
+    position: relative;
+}
