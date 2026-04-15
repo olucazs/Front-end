@@ -1,0 +1,28 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.transform{
+    background-color:blue;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 2s;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+.transform:hover{
+    transform:translate(-50%, -50%) rotateY(-60deg);
+}

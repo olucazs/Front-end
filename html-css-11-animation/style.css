@@ -1,0 +1,51 @@
+
+div{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+h2.h1{
+    animation-name: animation;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+h2.h2{
+    margin-top: -20px;
+    animation-name: animation2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation{
+    30%{
+        color: purple;
+    }
+
+    50%{
+        margin-left: 100px;
+        color: purple;
+    }
+
+    100%{
+        margin-left: 0px;
+        color:none;
+    }
+}
+
+@keyframes animation2{
+    30%{
+        color: purple;
+    }
+
+    50%{
+        margin-left: 80px;
+        color: purple;
+    }
+
+    100%{
+        margin-left: 0px;
+        color:none;
+    }
+}
