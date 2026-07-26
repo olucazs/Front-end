@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.slider-container{
+    width: 60%;
+    margin:auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* div pai */
+.pai{
+    width: 100%;
+    display: flex;
+    transition: transform 1s ease;
+}
+
+/* sections */
+.slide{
+    width: 90%;
+    min-width: 100%;
+    height: 220px;
+    padding: 20px;
+    background: #f2f2f2;
+    text-align: center;
+    flex-shrink: 0;
+    background-color: rgb(65,65,65);
+    color: white;
+}
+
+/* imagem */
+.slide img{
+    width: 50px;
+    height: auto;
+}

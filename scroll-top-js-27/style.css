@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    width: 100%;
+    background-color: #aaa;
+    height: 70px;
+}
+
+#links{
+    margin: auto;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding-top: 4%;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+article{
+    width: 60%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 0px;
+
+}

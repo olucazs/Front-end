@@ -1,2 +1,2 @@
-# html-css
-Primeiros códigos em html-css
+# javascript
+curso javascript

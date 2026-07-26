@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        window.alert("Vamos realizar um calculo de média escolar!");
+        var port = Number(window.prompt("Sua nota em Lingua Portuguesa: "));
+        var mat = Number(window.prompt("Sua nota em Matematica: "));
+        var hist = Number(window.prompt("Sua nota em historia: "));
+
+        var soma = mat + port + hist
+        var media = soma / 3;
+
+        window.alert(`Sua media foi de ${media.toFixed(1)}`)
+    </script>
+</body>
+</html>

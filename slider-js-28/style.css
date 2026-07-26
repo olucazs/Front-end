@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 80%;
+    max-height: 700px;
+    margin: auto;
+}
+
+.slider img{
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
