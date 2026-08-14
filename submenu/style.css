@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #00003d;
+    color: white;
+    padding: 15px 20px;
+}
+
+div.center{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    transition: 0.3;
+    color: rgb(170, 170, 170);
+}
+
+.menu-desktop > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu-desktop > ul > li{
+    position: relative;
+    list-style: none;
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+aside.hide{
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: -50px;
+    width: 150px;
+    box-shadow: 2px 2px 2px rgb(107, 107, 107);
+}
+
+ul.submenu-desktop{
+    position: relative;
+    height: 150px;
+    background: linear-gradient(to bottom,#00003d ,#0e0766,#1d0e90);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+ul.submenu-desktop li{
+    width: 150px;
+    list-style: none;
+}
+
+nav.menu-mobile{
+    display: none;
+    list-style-type: none;
+    background: linear-gradient(to right,#00003d ,#0e0766,#1d0e90);
+    font-size: 25px;
+    position: absolute;
+    left: 0px;
+    top: 57px;
+    width: 150px;
+    height: 200px;
+}
+
+nav.menu-mobile ul{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+}
+
+nav.menu-mobile ul li{
+    width: 100%;
+    margin: 15px 0px;
+    padding-left: 10px;
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.submenu{
+    cursor: pointer;
+    display: none;
+    background-color: #00003d;
+    border: none;
+}
+
+@media screen and (max-width: 760px){
+    nav.menu-desktop{display: none;}
+    .submenu{display:block;}
+    header{padding: 0px;}
+    .logo{padding: 15px 20px;}
+    .submenu{padding: 0px 20px;}
+}
