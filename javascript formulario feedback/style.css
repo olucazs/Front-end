@@ -1,0 +1,81 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, black, rgb(31, 31, 31), gray);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.box-form{
+    margin-top: 5%;
+    max-width: 500px;
+    min-height: 400px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 15px;
+}   
+
+input{
+    width: 80%;
+    margin: 20px auto 0px auto;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+input:focus{
+    box-shadow: 2px 2px 2px rgb(54, 54, 54);
+}
+
+button{
+    min-width: 60%;
+    margin: 20px auto;
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 2px 2px 2px rgb(54, 54, 54);
+}
+
+textarea{
+    width: 80%;
+    margin: 20px auto 0px auto;
+    height: 200px;
+    resize: none;
+}
+
+
+span{
+    display: block;
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.box-sucesso{
+    background-color: green;
+    margin-top: 10px;
+    color: white;
+    border-radius: 10px;
+    border:none;
+    display: none;
+    width: 400px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+}
