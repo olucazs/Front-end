@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px 15px;
+    background-image: url(images/bg_01.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+header div.center{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+a:hover{
+	color:#509d87;
+    transition: 0.3s;
+    text-decoration: underline;
+	position: relative;
+}
+
+.menu-desktop ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu-desktop ul li{
+    margin-left: 50px;
+}
+
+@media screen and (max-width:768px){
+
+    header div.center{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        margin-bottom: 25px;
+    }
+
+    .menu-desktop ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu-desktop ul li{
+        margin: 0 15px;
+    }
+
+    a{
+        font-size: 19px;
+    }
+
+}
+
+.sessao1{
+    margin: 30px 15px;
+}
+
+.sessao1 div.center{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sessao1 div.left1{
+    max-width: 600px;
+}
+
+.sessao1 div.left1 h2{
+    color: #509d87;
+    font-weight: lighter;
+    font-size: 38px;
+}
+
+h2 span{
+    font-weight: bold;
+}
+
+.sessao1 p span{
+    font-weight: bold;
+}
+
+.sessao1 p{
+    margin-top: 30px;
+}
+
+.sessao1 button.agendar{
+    background-color: #509d87;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px rgb(116, 115, 115);
+}
+
+.sessao1 button.agendar:hover{
+    background: linear-gradient(to right,#376d5e,#509d87);
+    transition: 0.3s;
+}
+
+.sessao1 div.right1{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+
+    .sessao1 .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left1,
+    .right1{
+        width: 100%;
+    }
+
+    .left1{
+        margin-bottom: 30px;
+    }
+
+    .right1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .right1 img{
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        display: block;
+    }
+}
+
+.sessao2{
+    margin-top: 60px;
+}
+
+.sessao2 .center{
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.sessao2 .center > div{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sessao2 .center> div h3 span{
+    color: #7dd5b0;
+}
+
+.sessao2 .center> div p{
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1024px){
+
+    .sessao2 .center{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .sessao2 .center{
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+}
+
+.sessao3{
+    margin-top: 50px;
+}
+
+.sessao3 div.center{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sessao3 .left2{
+    max-width: 800px;
+}
+
+.sessao3 .right2{
+    padding-top: 100px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.sessao3 .right2 h3{
+    color: #7dd5b0;
+}
+
+@media screen and (max-width: 1200px){
+    .sessao3 .left2{
+        display: none;
+    }
+
+    .sessao3 .right2{
+        padding: 20px 20px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.sessao4{
+    background-image: url(images/bg_01.png);
+    background-position: bottom;
+    color: white;
+    height: 500px;
+    text-align: center;
+}
+
+.sessao4 .center{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.sessao4 h1{
+    padding-top: 50px;
+    max-width: 700px;
+    margin: auto;
+    font-size: 35px;
+}
+
+.sessao4 h6{
+    text-decoration: underline;
+    font-size: 22px;
+    margin-top: 10px;
+    color: #509d87;
+}
+
+footer{
+    background-color: rgb(77, 76, 76);
+    text-align: center;
+    position: relative;
+    bottom: -8px;
+}
+
+footer h1{
+    font-size: 16px;
+    color: white;
+    padding: 20px 0px;
+}

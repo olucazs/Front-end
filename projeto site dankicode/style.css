@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(54, 54, 54);
+}
+
+/*HEADER*/
+
+.bg{
+    margin: auto;
+    width: 80%;
+    height: 800px;
+    background-image: url(imagens/capa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover{
+    font-size: 18px;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+div.logo{
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+
+    background-color: rgba(33, 35,67, 0.5);
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.artigo{
+    position: absolute;
+
+    width: 40%;
+    height: auto;
+    top: 40%;
+    left: 45%;
+}
+
+.artigo h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.artigo p{
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+/*HEADER*/
+
+/*SECTION-1*/
+.sec1{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    background: linear-gradient(to bottom right, rgb(70, 0, 128) 50%,rgb(77, 1, 255) 50%);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.sec1 h2{
+    color: white;
+    font-size: 45px;
+    padding: 20px 0px 40px 20px;
+}
+
+.sec1 ul{
+    color: white;
+    font-size: 20px;
+    padding: 0px 0px 0px 20px;
+}
+
+.sec1 input{
+    cursor: pointer;
+    float: right;
+    margin-right: 200px;
+
+    width: 300px;
+    height: 80px;
+    border-radius: 15px;
+    border: none;
+    background-color: orange;
+    color: white;
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+}
+
+.sec1 input:hover{
+    width: 310px;
+    height: 85px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+/*SECTION-1*/
+
+/*ARTICLE*/
+article{
+    width: 80%;
+    height: 600px;
+    margin:auto;
+    background-color: white;
+    position: relative;
+}
+article h2{
+    text-decoration: underline;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 20px 0px 20px 0px ;
+}
+
+article p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 60px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/*ARTICLE*/
+
+/*TABLE*/
+
+table{
+    width: 45%;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgb(105, 105, 105) ;
+}
+
+thead{
+    background-color:rgb(70, 0, 128) ;
+}
+
+th{
+    padding: 10px 0px 10px 0px;
+    color: white;
+}
+
+tr{
+    display: flex;
+    align-items: top;
+    border: none;
+    justify-content: space-between;
+}
+
+td{
+    border: 1px solid black;
+}
+/*TABLE*/ /*ARTICLE*/
+
+/*MAIN*/
+
+main{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+div.time{
+    padding-top: 150px;
+    background-color: rgb(147, 80, 255);
+    width: 50%;
+    height: auto;
+}
+
+.time h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+}
+
+.time p{
+    color: white;
+    margin-top: 20px;
+    padding-left: 50px;
+    font-style: italic;
+}
+
+div.perfil{
+    padding-top: 150px;
+    background-color: rgb(253, 242, 228);
+    width: 50%;
+    height: auto;
+}
+
+.perfil h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+}
+
+.perfil p{
+    color: black;
+    margin-top: 20px;
+    padding-left: 50px;
+    font-style: italic;
+}
+/*MAIN*/
+
+/*SECTION-2*/
+.sec2{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    background-color:rgb(70, 0, 128) ;
+}
+
+div.form{
+    width: 800px;
+    height: auto;
+}
+
+.sec2 h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    padding: 20px 0px 30px 50px;
+    text-decoration: underline;
+}
+
+.sec2 p{
+    font-style: italic;
+    color: white;
+    width: 300px;
+    padding: 0px 0px 50px 50px;
+    margin-bottom: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 400px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border:none;
+    box-shadow: 2px 2px 2px rgb(65, 65, 65);
+}
+
+input[type=button]{
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin-left: 40px;
+    background-color: orange;
+}
+
+input[type=button]:hover{
+    width: 210px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+/*SECTION-2*/
+
+/*FOOTER*/
+footer{
+    width: 80%;
+    margin: auto;
+    background-color:  rgba(33, 35,67, 0.5);
+}
+
+.footer{
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+}
+/*FOOTER*/
+
+div.clear{
+    clear: both;
+}
+
+@media(max-width:1105px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .sec1 input{
+        cursor: pointer;
+        float: right;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .artigo{
+        position: absolute;
+
+        width: 40%;
+        height: auto;
+        top: 15%;
+        left: 35%;
+        transition: 0.3s;
+}
+    table{
+        display: none;
+}
+
+    article p{
+        margin-top: 100px;
+       
+}
+}
+
+@media(max-width:690px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .logo{
+        float:none ;
+        width: 200px;
+        margin:auto;
+        text-align: center;
+    }
+
+    .bg{
+        width: 100dvw;
+    }
+
+    .sec1 input{
+        cursor: pointer;
+        float: right;
+        margin-right: 50px;
+        margin-top: 50px;
+
+        width: 150px;
+        height: 50px;
+        border-radius: 15px;
+        border: none;
+        background-color: orange;
+        color: white;
+        box-shadow: 3px 3px 3px rgb(75, 75, 75);
+        transition: 0.3s;
+    }
+
+    .artigo{
+        position: absolute;
+
+        width: 60%;
+        height: auto;
+        top: 20%;
+        left: 25%;
+        transition: 0.3s;
+
+}
+
+    .artigo h1{
+        color: white;
+        font-size: 25px;
+        margin-bottom: 10px;
+}
+
+    .artigo p{
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .sec1{
+        width: 100dvw;
+    }
+
+    article{
+        width: 100dvw;
+    }
+
+    article p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    main{
+        width: 100dvw;
+    }
+    
+    .sec2{
+        width: 100dvw;
+    }
+
+    footer{
+         width: 100dvw;
+    }
+
+    .time h2{
+        margin-top: -30px;
+    }
+
+    .perfil h2{
+        margin-top: -30px;
+    }
+}
