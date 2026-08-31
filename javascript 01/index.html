@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript 01</title>
     <style>
-        body{
-            background-color: rgb(76, 76, 255);
-        }
+        body{background-color: rgb(76, 76, 255);}
 
-        h1{
-            color: white;
-        }
+        h1{color: white;}
 
-        p{
-            color: white;
-        }
+        p{color: white;}
+
+        button{padding: 15px; border-radius: 15px; border: none; cursor: pointer;}
+
+        button:hover{box-shadow: 5px 5px 5px rgb(65, 65, 65);}
     </style>
 </head>
 <body>
     <h1>Primeiro comando em JavaScript</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero hic architecto quos culpa. Debitis nobis a vero repudiandae molestiae iure, ipsum ad, sit magnam atque commodi facilis similique aut provident.</p>
-
-
-    <script>
-        var who = window.prompt("Qual seu nome")
-        window.alert("É um prazer te conhecer, " + who + "!")
-    </script>
+    <button onclick="Tarefa()">Clique aqui para executar a tarefa!</button>
+    
 </body>
+
+<script src="../jquery.js"></script>
+<script src="index.js"></script>
 </html>

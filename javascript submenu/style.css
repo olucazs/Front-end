@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* BOTÃO */
+header > button {
+    display: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1001;
+}
+
+
+/* MENU LATERAL */
+div.menu {
+        position: fixed;
+    top: 0;
+    right: -50%;
+
+    width: 50%;
+    height: 100vh;
+
+    z-index: 999;
+
+    background: rgba(20, 20, 20, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: right 0.5s ease;
+}
+
+div.menu.ativo {
+    right: 0;
+}
+
+
+/* NAV DO MENU */
+div.menu > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 80px 30px;
+}
+
+
+/* LINKS DO MENU */
+div.menu > nav > a {
+    margin: 20px 0;
+}
+
+
+/* HEADER */
+header {
+    width: 80%;
+    height: 50px;
+
+    margin: 15px auto;
+
+    background: rgba(20, 20, 20, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+
+/* NAV PRINCIPAL */
+header > nav {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+nav > a:hover {
+    color: #fff;
+
+    text-shadow:
+        0 0 5px #2563eb,
+        0 0 10px #2563eb,
+        0 0 20px #2563eb,
+        0 0 40px #2563eb;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 400px;
+    height: 100vh;
+    background: rgba(20, 20, 20, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu > a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+    margin: 20px 0px;
+}
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+
+    header > nav {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        padding-right: 10px;
+    }
+
+    header > button {
+        display: block;
+    }
+}
