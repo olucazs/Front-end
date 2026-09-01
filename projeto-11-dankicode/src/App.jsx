@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Intro from './components/Intro'
 import Feedback from './components/Feedback'
 import Sobre from './components/Sobre'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <Feedback />
       <Sobre />
+      <Footer />
     </>
   )
 }

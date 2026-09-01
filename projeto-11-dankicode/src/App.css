@@ -99,8 +99,7 @@ nav > button:hover{
 .div_comentario{
   max-width: 450px;
   margin-bottom: 50px;
-  border: 1px solid rgb(75, 75, 75);
-  border-radius: 10px;
+
 }
 
 .div_comentario > p{
@@ -112,14 +111,14 @@ nav > button:hover{
 .div_comentario > img {
   width: 50px;
   float: right;
-  padding: 90px 15px 0px 0px;
+  padding: 30px 15px 0px 0px;
 }
 
 .coments{
   display: inline-block;
   padding: 15px;
   color: green;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 section.sobre{
@@ -130,4 +129,65 @@ section.sobre > h1{
   font-size: 33px;
   border-bottom: 3px solid green;
   width: 220px;
+}
+
+div.card > img{
+  width: 60px;
+}
+
+div.cards{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.card{
+  width: 33.3%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  div.cards{
+    flex-direction: column;
+  }
+
+  div.card{
+    width: 80%;
+    margin: 30px auto;
+
+  }
+}
+
+section.footer{
+  width: 100%;
+  background-color: green;
+  color: white;
+  margin-top: 150px;
+}
+
+.footer_div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 30px 0px;
+}
+
+aside{
+  width: 400px;
+}
+
+aside > p {
+  margin: 15px 0px;
+}
+
+aside > img{
+  cursor: pointer;
+}
+
+.footer_logo{
+  width: 400px;
 }
