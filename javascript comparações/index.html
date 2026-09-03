@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checking if you are or not older enough to vote:</h1>
+
+    <input id="age" type="number" placeholder="Type your age">
+    <button onclick="myFunction()">Check</button>
+    <p id="demo"></p>
+</body>
+
+<script>
+    let voteage = 18;
+
+    function myFunction(){
+        let age = document.getElementById('age').value;
+
+        if (age >= voteage){
+            document.getElementById('demo').innerHTML = "You are old enough to vote!";
+        } else if (age == ''){
+            document.getElementById('demo').innerHTML = "Please enter your age.";
+        } else {
+            document.getElementById('demo').innerHTML = "You are not old enough to vote.";
+        }
+    }
+</script>
+</html>
