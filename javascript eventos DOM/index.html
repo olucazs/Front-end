@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#demo{
+            width: 200px;   
+            background-color: black;
+            padding: 20px 20px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            margin: 200px auto;
+            height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="demo">
+        Interações do mouse
+    </div>
+</body>
+
+<script>
+    let area = document.getElementById('demo')
+
+    area.addEventListener('click', clicar)
+    area.addEventListener('mouseenter', entrar)
+    area.addEventListener('mouseleave', sair)
+
+    function clicar(){
+        area.innerText = 'Mouse clicou!'
+        area.style.background = 'green'
+    }
+
+    function entrar(){
+        area.innerText = 'Mouse entrou!'
+        area.style.background = 'blue'
+    }
+
+    function sair(){
+        area.innerText = 'Mouse saiu!'
+        area.style.background = 'red'
+    }
+
+</script>
+
+</html>
